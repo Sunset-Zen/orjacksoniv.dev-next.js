@@ -6,6 +6,7 @@ import { IoMdMail } from "react-icons/io";
 import scroll from "../app/img/Group.png";
 
 import { Button } from "@/components/ui/button";
+import Footer from "./comp/Footer";
 
 // Main Entry Point
 export default function Home() {
@@ -62,10 +63,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      {/* sidebar */}
+      <div id="sidebar"></div>
       {/* Pitch Section */}
       <section id="pitch" className="relative">
-        <h1 className="text-white text-2xl">
+        <h1 className="text-white text-2xl" id="pitch-header">
           <b>
             <i>My Creative Ambition</i>
           </b>
@@ -73,19 +75,28 @@ export default function Home() {
         <h1 className="text-xl">
           <i>Real Progress Starts With Innovation</i>
         </h1>
-        <p className="opacity-70">
-          Welcome !! I am a Computer Science major enrolled in the College of
-          Engineering at Louisiana State University with a primary concentration
-          in Software Development.
-        </p>
-        <p className="opacity-70">
-          As an independent creative-minded artist, my aim is to merge my
-          concrete creative abilities alongside acquired technical software
-          skills to develop and deliver truly captivating awe inspiring software
-          applications.
-        </p>
-        <h1 className="text-xl">Let's Build Together !!</h1>
+        <div className="text-container">
+          <p className="opacity-70">
+            Welcome !! I am a Computer Science major enrolled in the College of
+            Engineering at Louisiana State University with a primary
+            concentration in Software Development.
+          </p>
+        </div>
+        <div className="text-container">
+          <p className="opacity-70">
+            As an independent creative-minded artist, my aim is to merge my
+            concrete creative abilities alongside acquired technical software
+            skills to develop and deliver truly captivating awe inspiring
+            software applications.
+          </p>
+        </div>
+        <h1 className="text-xl" id="pitch-cta">
+          Let's Build Together !!
+        </h1>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -65,7 +65,6 @@
     --ring: 212.7 26.8% 83.9%;
   }
 }
-
 @layer base {
   * {
     @apply border-border;
@@ -73,135 +72,166 @@
   body {
     @apply bg-background text-foreground;
   }
-} */
-
-@layer base {
-  h1 {
-    @apply text-5xl;
-  }
 }
+
 /* Base Styles */
-html {
-  scroll-behavior: smooth;
-}
-body {
-  background: linear-gradient(to bottom, #000000, #1d1720);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
 
-  scroll-behavior: smooth;
-}
-div {
-  color: aliceblue;
-}
-nav {
-  display: flex;
-  color: aliceblue;
-}
-
-/* Nav Styles */
-
-/* Footer Styles */
-
-/* Homepage Styles */
-.text-container {
-  width: 90%;
-}
-#Homepage {
-  display: flex;
-  flex-direction: column;
-}
-#hero {
-  /* border: 1px solid red; */
-  width: 100%;
-  color: white;
-
-  background: url("../img/pexels-а.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  object-fit: contain;
-  overflow: hidden;
-}
-#hero-c1 {
-}
-#hero-c2 {
-}
-
-#pitch-header {
-  filter: drop-shadow(0 0 2em #e9462e);
-  text-shadow: 0px 0px 5px #e9462e;
-}
-#pitch-cta {
-  filter: drop-shadow(0 0 2em #e9462e);
-  text-shadow: 0px 0px 5px #e9462e;
-}
-#sidebar {
+/* About Page Styles */
+#ap-sidebar {
   background: linear-gradient(to top, #e9462e, #aa1e5d, #630531, #2c202d);
+}
+#carousel {
+  width: 85%;
+  overflow: hidden;
+  display: flex;
+  white-space: no-wrap;
+  /* border: 1px solid yellow; */
+
+  filter: drop-shadow(0 0 2em #e9462e);
+}
+#skillset-title {
+  filter: drop-shadow(0 0 2em #e9462e);
+  text-shadow: 0px 0px 5px #e9462e;
+}
+#education-title {
+  filter: drop-shadow(0 0 2em #e9462e);
+  text-shadow: 0px 0px 5px #e9462e;
+}
+#about-icons-container {
+  /* border: 1px solid red; */
+  filter: drop-shadow(0 0 2em #e9462e);
+  text-shadow: 0px 0px 5px #e9462e;
+}
+
+/* Animations */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /* Responsive Design */
 @media only screen and (min-width: 320px) and (max-width: 425px) {
-  /* Base Styles */
-  nav {
-    padding-left: 5%;
-    padding-right: 5%;
-    color: aliceblue;
-    margin-top: 5%;
-    z-index: 3;
+  .list-items {
+    margin-top: 15px;
+    gap: 30px;
   }
-  /* Homepage Styles */
-  .hero-c2-links {
+  .carousel-slide {
+    border: 1px solid white;
+    height: 60px;
+    animation: 5s slide infinite linear;
+  }
+  .carousel-child {
     transform: scale(3);
-    opacity: 70%;
-    margin-top: 20px;
-    overflow: hidden;
+    align-self: center;
+    margin: 0 20px;
+  }
+  .about-icons {
+    transform: scale(4);
+    margin: 10px 60px;
   }
 
-  #Homepage {
+  #Aboutpage {
     position: relative;
-    height: 1800px;
+    height: 1890px;
   }
-  #hero {
-    height: 850px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  #about-logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: scale(1.5);
   }
-  #hero-c1 {
-    margin-top: 420px;
-    margin-left: 20px;
-  }
-  #hero-c2 {
-    margin-left: 20px;
-    margin-top: 90px;
-    font-weight: bold;
-  }
-  #scroll-button {
-    margin-top: 15px;
-    margin-left: 160px;
-  }
-  #sidebar {
+  #ap-sidebar {
     position: absolute;
-    top: 47.2%;
+    left: 0px;
     width: 5px;
     z-index: 3;
-    height: 55%;
+    height: 100%;
   }
 
-  #pitch {
-    height: 625px;
-    display: flex;
+  #carousel {
+    height: 60px;
+    margin-left: 20px;
+  }
+
+  #skillset {
+    padding-left: 20px;
+    margin-top: 60px;
+    /* border: 1px solid red; */
+    height: 500px;
+  }
+  #skillset-title {
+    margin-bottom: 20px;
+  }
+  #skill-list {
     flex-direction: column;
-    gap: 25px;
-    color: aliceblue;
-    padding-top: 70px;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  #title-section {
+    display: relative;
+    height: 200px;
+
+    padding-top: 35%;
     padding-left: 20px;
   }
-  #pitch-cta {
-    margin-top: 25px;
-    margin-left: 35%;
+
+  #education {
+    padding-left: 20px;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+  }
+  #education-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+  #education-paragraph {
+    width: 95%;
+  }
+  #education-title {
+    margin-bottom: 30px;
+  }
+  #school-list {
+    margin-bottom: 10px;
+  }
+  #school-list > * {
+    /* border: 1px solid gold; */
+  }
+  #d1 {
+    margin-left: 30%;
+  }
+  #d2 {
+    margin-left: 26%;
+  }
+  #d3 {
+    margin-left: 15%;
+  }
+
+  #awards {
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 110px;
+  }
+  #award-list > * {
+  }
+  #about-icons-container {
+    margin-top: 50px;
+    padding-left: 12%;
+  }
+  #a1 {
+    margin-left: 45%;
+  }
+  #a2 {
+    margin-left: 27%;
+  }
+  #a3 {
+    margin-left: 45%;
+  }
+  #a4 {
+    margin-left: 27%;
   }
 } /* Phones */
 @media only screen and (min-width: 600px) {

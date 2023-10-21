@@ -30,6 +30,8 @@ const SideNav = () => {
 
         {/* Actual Side Navbar */}
         <SheetContent className="bg-gradient-to-t from-black to-sunsetpurple">
+          {/* Side Banner */}
+          <div id="sm-sidebar"></div>
           {/* Sidebar */}
           <div className=""></div>
           <SheetHeader>

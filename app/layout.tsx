@@ -25,7 +25,6 @@ export default function RootLayout({
       <body className={rubik.className}>
         <Nav />
         {children}
-        <Footer />
       </body>
     </html>
   );

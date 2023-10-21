@@ -75,9 +75,14 @@
 }
 
 /* Base Styles */
+
+/* Navbar Styles */
 #navbar {
   position: absolute;
   width: 100%;
+}
+#sm-sidebar {
+  background: linear-gradient(to top, #e9462e, #aa1e5d, #630531, #2c202d);
 }
 
 /* Responsive Design */
@@ -89,9 +94,37 @@
     margin-top: 30px;
     border: 1px solid red;
   }
+  .sub-link {
+    margin-top: 15px;
+  }
+  #footer {
+    margin-top: 40px;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 30px;
+  }
+  #footer-site-links {
+    gap: 20px;
+  }
+  #footer-logo {
+    position: relative;
+    /* border: 1px solid red; */
+    right: 5px;
+    width: 25%;
+    height: 85%;
+    /* transform: scale(0.5); */
+  }
+
   #side-menu {
     position: relative;
     margin-left: 80%;
+  }
+  #sm-sidebar {
+    position: absolute;
+    left: 0px;
+    width: 5px;
+    z-index: 3;
+    height: 100%;
   }
   #toggle-icon {
     transform: scale(4);
