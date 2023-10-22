@@ -1,0 +1,42 @@
+/* Base Styles */
+
+/* Project Page Styles */
+#pp-sidebar {
+  background: linear-gradient(to top, #e9462e, #aa1e5d, #630531, #2c202d);
+}
+
+/* Responsive Design */
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  #Projectpage {
+  }
+  #pp-sidebar {
+    position: absolute;
+    left: 0px;
+    width: 5px;
+    z-index: 3;
+    height: 100%;
+  }
+  #project-logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: scale(2.3);
+  }
+
+  #title-section {
+    display: relative;
+    height: 200px;
+
+    padding-top: 35%;
+    padding-left: 20px;
+  }
+}
+/* Phones */
+@media only screen and (min-width: 600px) {
+} /* Tablets */
+@media only screen and (min-width: 768px) {
+} /* Large Tablets */
+@media only screen and (min-width: 992px) {
+} /* Laptops */
+@media only screen and (min-width: 1200px) {
+} /* Large Laptops */

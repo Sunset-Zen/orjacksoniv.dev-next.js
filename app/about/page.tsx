@@ -58,6 +58,10 @@ export default function About() {
                 <p>C#</p>
                 <p>Python</p>
               </ul>
+              <ul className="list-none">
+                <p>MySQL</p>
+                <p>SQL</p>
+              </ul>
             </div>
           </div>
           {/* Frameworks */}
@@ -105,7 +109,7 @@ export default function About() {
       <section id="education">
         <h1 className="text-white text-2xl" id="education-title">
           <i>
-            <b>Education</b>
+            <b>Educational History</b>
           </i>
         </h1>
         {/* Content */}

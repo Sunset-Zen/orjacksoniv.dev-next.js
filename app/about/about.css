@@ -125,7 +125,7 @@
     animation: 5s slide infinite linear;
   }
   .carousel-child {
-    transform: scale(3);
+    transform: scale(3.3);
     align-self: center;
     margin: 0 20px;
   }

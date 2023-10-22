@@ -85,7 +85,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(to bottom, #000000, #1d1720);
+  background: linear-gradient(to top, #000000, #1d1720);
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
