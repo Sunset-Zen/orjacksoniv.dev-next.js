@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoMdMail } from "react-icons/io";
 import scroll from "../app/img/Group.png";
+import ologo from "./img/O-Logo.png";
 
 import { Button } from "@/components/ui/button";
 import Footer from "./comp/Footer";
@@ -16,21 +17,23 @@ export default function Home() {
       <section id="hero" className="">
         {/* Title & Logo Section */}
         <div id="hero-c1">
-          <h1 className="text-3xl">Greetings,</h1>
+          <h1 className="text-2xl">Greetings,</h1>
           <h1 className="text-4xl">
-            Im <i>Otis Jackson IV</i>
+            I'm
+            <i>
+              <b> Otis Jackson IV</b>
+            </i>
           </h1>
           <h3 className="text-xl">
             <i>Software Engineer & UI / UX Designer</i>
           </h3>
         </div>
         {/* Logo */}
+        <Image src={ologo} alt="" id="hero-logo" />
 
         {/* CTA Section */}
         <div id="hero-c2">
-          <h1>
-            <i>"Where Elevation is the Standard"</i>
-          </h1>
+          <h1>"Where Elevation is the Standard"</h1>
           <div className="flex gap-0">
             {/* button x3 */}
             <a href="https://github.com/Sunset-Zen" target="_blank">
@@ -75,6 +78,7 @@ export default function Home() {
         <h1 className="text-xl">
           <i>Real Progress Starts With Innovation</i>
         </h1>
+        <Image src={ologo} alt="" id="pitch-logo" />
         <div className="text-container">
           <p className="opacity-70">
             Welcome !! I am a Computer Science major enrolled in the College of

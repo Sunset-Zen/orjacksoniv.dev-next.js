@@ -140,9 +140,11 @@
   }
   #about-logo {
     position: relative;
+    left: 30px;
+    bottom: 10px;
     width: 50px;
     height: 50px;
-    transform: scale(1.5);
+    transform: scale(2);
   }
   #ap-sidebar {
     position: absolute;

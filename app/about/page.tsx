@@ -18,14 +18,14 @@ export default function About() {
       {/* Title Section */}
       <div id="title-section" className="flex">
         <div>
-          <h1 className="text-white text-2xl">
+          <h1 className="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-sunsetpink to-sunsetorange">
             <i>
               <b>About Me</b>
             </i>
           </h1>
-          <h1 className="text-xl">
+          <p className="opacity-70">
             <i>Beneath the Surface...</i>
-          </h1>
+          </p>
         </div>
         {/* Image */}
         <Image src={aboutlogo} alt="" id="about-logo" />

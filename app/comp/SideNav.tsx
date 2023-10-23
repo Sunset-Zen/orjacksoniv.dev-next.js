@@ -11,7 +11,9 @@ import {
 } from "@/components/ui/sheet";
 
 import Link from "next/link";
+import Image from "next/image";
 import ToggleIcon from "./ToggleIcon";
+import ologo from "../img/O-Logo.png";
 
 // import { IoMenu } from "react-icons/io5";
 // import { HamburgerMenuIcon } from "@radix-ui/react-icons";
@@ -32,11 +34,17 @@ const SideNav = () => {
         <SheetContent className="bg-gradient-to-t from-black to-sunsetpurple">
           {/* Side Banner */}
           <div id="sm-sidebar"></div>
+          {/* O Logo */}
+          <Image src={ologo} alt="" className="opacity-20" />
           {/* Sidebar */}
           <div className=""></div>
           <SheetHeader>
             <SheetTitle>
-              <h1 className="text-white">Otis Jackson IV</h1>
+              <h1 className="text-white text-xl">
+                <b>
+                  <i>Otis Jackson IV</i>
+                </b>
+              </h1>
             </SheetTitle>
           </SheetHeader>
 

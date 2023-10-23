@@ -66,8 +66,12 @@ const Footer = () => {
             <h1>About</h1>
           </a>
           <div className="flex-col gap-0 sub-link text-right">
-            <p className="opacity-60">Skillset</p>
-            <p className="opacity-60">Education</p>
+            <a href="/about/#skillset">
+              <p className="opacity-60">Skillset</p>
+            </a>
+            <a href="/about/#education">
+              <p className="opacity-60">Education</p>
+            </a>
           </div>
         </div>
         <div>
@@ -75,7 +79,9 @@ const Footer = () => {
             <h1>Projects</h1>
           </a>
           <div className="flex-col gap-0 sub-link text-right">
+            <a href="/projects"></a>
             <p className="opacity-60">Active</p>
+            <a href="/projects"></a>
             <p className="opacity-60">Developed</p>
           </div>
         </div>
@@ -84,7 +90,9 @@ const Footer = () => {
             <h1>Experience</h1>
           </a>
           <div className="flex-col gap-0 sub-link text-right">
+            <a href="/experience"></a>
             <p className="opacity-60">Internships</p>
+            <a href="/experience"></a>
             <p className="opacity-60">On-Campus</p>
           </div>
         </div>

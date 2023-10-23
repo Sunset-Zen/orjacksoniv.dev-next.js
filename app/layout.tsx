@@ -6,8 +6,12 @@ import Nav from "./comp/Nav";
 import Footer from "./comp/Footer";
 
 // Fonts
-import { Rubik } from "next/font/google";
+import { Rubik, Inria_Sans } from "next/font/google";
 const rubik = Rubik({ subsets: ["latin"] });
+const inria = Inria_Sans({
+  subsets: ["latin"],
+  weight: "300",
+});
 
 // Object Literal
 export const metadata: Metadata = {

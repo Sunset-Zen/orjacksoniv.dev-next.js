@@ -178,6 +178,13 @@ nav {
     margin-top: 90px;
     font-weight: bold;
   }
+  #hero-logo {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    opacity: 40%;
+    transform: scale(0.5);
+  }
   #scroll-button {
     margin-top: 15px;
     margin-left: 160px;
@@ -202,6 +209,11 @@ nav {
   #pitch-cta {
     margin-top: 25px;
     margin-left: 35%;
+  }
+  #pitch-logo {
+    opacity: 5%;
+    position: absolute;
+    right: 15px;
   }
 } /* Phones */
 @media only screen and (min-width: 600px) {

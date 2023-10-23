@@ -92,7 +92,7 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 30px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .sub-link {
     margin-top: 15px;
@@ -111,7 +111,7 @@
     /* border: 1px solid red; */
     right: 5px;
     width: 25%;
-    height: 85%;
+    /* height: 85%; */
     /* transform: scale(0.5); */
   }
 

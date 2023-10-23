@@ -4,10 +4,51 @@
 #pp-sidebar {
   background: linear-gradient(to top, #e9462e, #aa1e5d, #630531, #2c202d);
 }
+#active-projects {
+  color: whitesmoke;
+}
+.subtitle {
+  filter: drop-shadow(0 0 2em #e9462e);
+  text-shadow: 0px 0px 5px #e9462e;
+}
+#developed-projects {
+  color: whitesmoke;
+}
 
 /* Responsive Design */
 @media only screen and (min-width: 320px) and (max-width: 425px) {
+  .proj-box {
+    flex-direction: column;
+  }
+  .proj-title {
+    gap: 5px;
+  }
+  .proj-title-box {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .photos {
+    display: none;
+  }
+  .p-summary {
+    margin-top: 10px;
+    width: 85%;
+  }
+
   #Projectpage {
+    position: relative;
+    height: 2750px;
+  }
+  #active-projects {
+    padding-left: 20px;
+    margin-bottom: 80px;
+  }
+  #active-title {
+    margin-bottom: 20px;
+  }
+  #developed-projects {
+    padding-left: 20px;
+    margin-bottom: 90px;
   }
   #pp-sidebar {
     position: absolute;
@@ -18,9 +59,11 @@
   }
   #project-logo {
     position: relative;
+    left: 100px;
     width: 50px;
+    bottom: 10px;
     height: 50px;
-    transform: scale(2.3);
+    transform: scale(2.4);
   }
 
   #title-section {
@@ -29,6 +72,44 @@
 
     padding-top: 35%;
     padding-left: 20px;
+    margin-bottom: 100px;
+  }
+
+  #findu {
+  }
+  #findu-logo {
+    height: 220px;
+    position: relative;
+    filter: drop-shadow(0 0 1em #c23761);
+  }
+  #findu-logo > * {
+    width: 85%;
+  }
+
+  #tenb {
+    margin-top: 80px;
+  }
+  #tenb-logo {
+    height: 260px;
+    filter: drop-shadow(0 0 1em #cfc7bb);
+  }
+  #tenb-logo > * {
+    position: relative;
+    width: 60%;
+    left: 10%;
+  }
+
+  #drop {
+    margin-top: 30px;
+  }
+  #drop-logo {
+    filter: drop-shadow(0 0 1em #fcefb2);
+  }
+  #drop-logo > * {
+    border-radius: 100%;
+    transform: scale(0.7);
+    position: relative;
+    left: 10px;
   }
 }
 /* Phones */

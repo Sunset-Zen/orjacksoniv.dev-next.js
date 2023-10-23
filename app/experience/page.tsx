@@ -16,12 +16,12 @@ export default function Experience() {
       {/* Title Section */}
       <div id="title-section" className="flex">
         <div id="exp-titles">
-          <h1 className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-sunsetpink to-sunsetorange">
+          <h1 className="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-sunsetpink to-sunsetorange">
             <i>
               <b>Experience</b>
             </i>
           </h1>
-          <p className="z-40">
+          <p className="z-40 opacity-70">
             <i>Hands On Real World Projects...</i>
           </p>
         </div>
@@ -38,16 +38,12 @@ export default function Experience() {
         {/* Internship 1 */}
         <section id="i1">
           <div className="flex gap-2">
-            <h1>
-              <i>
-                <b className="text-lg bg-clip-text text-transparent bg-gradient-to-r from-sunsetpink to-sunsetorange">
-                  Software Engineer Intern
-                </b>
-              </i>
-            </h1>
+            <p>
+              <b className="text-white text-lg">Software Engineer Intern</b>
+            </p>
             <p className="text-white"> | Summer 2023</p>
           </div>
-          <h1 className="text-blue-600">
+          <h1 className="text-blue-500 company">
             <i>Lockheed Martin</i>
           </h1>
 
@@ -89,17 +85,13 @@ export default function Experience() {
         <section id="i2">
           <div className="flex gap-2">
             <h1>
-              <i>
-                <b className="text-lg bg-clip-text text-transparent bg-gradient-to-r from-sunsetpink to-sunsetorange">
-                  Testing & Automation Intern
-                </b>
-              </i>
+              <b className=" text-white text-lg">Testing & Automation Intern</b>
             </h1>
             <p className="text-white"> | Summer 2022</p>
           </div>
-          <h1 className="text-blue-600">
+          <p className="text-blue-500 company">
             <i>Lockheed Martin</i>
-          </h1>
+          </p>
 
           <div className="description">
             <h1 className="text-lg bg-clip-text text-transparent bg-gradient-to-r from-sunsetpink to-sunsetorange">
@@ -148,16 +140,12 @@ export default function Experience() {
         {/* oc Job 1 */}
         <section id="i1">
           <div className="flex gap-2">
-            <h1>
-              <i>
-                <b className="text-lg bg-clip-text text-transparent bg-gradient-to-r from-sunsetpink to-sunsetorange">
-                  ITS Print Desk Assistant
-                </b>
-              </i>
-            </h1>
+            <p>
+              <b className="text-white text-lg">ITS Print Desk Assistant</b>
+            </p>
             <p className="text-white"> | 2022 - 2023</p>
           </div>
-          <h1 className="text-violet-600">
+          <h1 className="text-violet-600 company">
             <i>Louisiana State University</i>
           </h1>
 
@@ -196,16 +184,12 @@ export default function Experience() {
         {/* oc job 2 */}
         <section id="i1">
           <div className="flex gap-2">
-            <h1>
-              <i>
-                <b className="text-lg bg-clip-text text-transparent bg-gradient-to-r from-sunsetpink to-sunsetorange">
-                  RES Life Desk Assistant
-                </b>
-              </i>
-            </h1>
+            <p>
+              <b className="text-white text-lg">RES Life Desk Assistant</b>
+            </p>
             <p className="text-white"> | 2021</p>
           </div>
-          <h1 className="text-violet-600">
+          <h1 className="text-violet-600 company">
             <i>Louisiana State University</i>
           </h1>
 
