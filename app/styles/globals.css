@@ -142,7 +142,7 @@ nav {
 }
 
 /* Responsive Design */
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   /* Base Styles */
   nav {
     padding-left: 5%;
@@ -216,10 +216,47 @@ nav {
     right: 15px;
   }
 } /* Phones */
-@media only screen and (min-width: 600px) {
-} /* Tablets */
-@media only screen and (min-width: 768px) {
-} /* Large Tablets */
+@media only screen and (min-width: 600px) and (max-width: 834px) {
+  .hero-c2-links {
+    transform: scale(3);
+    opacity: 70%;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  #Homepage {
+    /* position: relative; */
+  }
+  #hero {
+    position: relative;
+    padding-top: 300px;
+    padding-left: 25px;
+    height: 1150px;
+  }
+  #hero-logo {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    opacity: 40%;
+    transform: scale(0.5);
+  }
+  #hero-c1 {
+    border: 1px solid red;
+    margin-top: 250px;
+    margin-bottom: 30px;
+    width: 70%;
+  }
+  #hero-c2 {
+    border: 1px solid purple;
+  }
+  #scroll-button {
+    margin-top: 15px;
+    margin-left: 160px;
+  }
+  #title {
+    font-size: x-large;
+  }
+} /* Tablets & Large Tablets*/
 @media only screen and (min-width: 992px) {
 } /* Laptops */
 @media only screen and (min-width: 1200px) {

@@ -24,7 +24,7 @@ export default function Home() {
               <b> Otis Jackson IV</b>
             </i>
           </h1>
-          <h3 className="text-xl">
+          <h3 id="title" className="text-xl sm:text-4xl">
             <i>Software Engineer & UI / UX Designer</i>
           </h3>
         </div>
@@ -66,8 +66,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* sidebar */}
       <div id="sidebar"></div>
+
       {/* Pitch Section */}
       <section id="pitch" className="relative">
         <h1 className="text-white text-2xl" id="pitch-header">

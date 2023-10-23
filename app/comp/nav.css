@@ -88,9 +88,12 @@
 #sm-sidebar {
   background: linear-gradient(to top, #e9462e, #aa1e5d, #630531, #2c202d);
 }
+#navbar-logo {
+  z-index: 6;
+}
 
 /* Responsive Design */
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .link-list {
     display: flex;
     flex-direction: column;
@@ -144,14 +147,35 @@
   #toggle-icon {
     transform: scale(4);
   }
+  #top-nav {
+    display: none;
+  }
 } /* Phones */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 834px) {
+  #navbar {
+    padding-top: 40px;
+    padding-left: 25px;
+    /* border: 1px solid gold; */
+  }
+  #top-nav {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    visibility: visible;
+
+    margin-left: 20%;
+    width: 55%;
+    z-index: 6;
+  }
+  #top-nav > * {
+    font-weight: 500;
+    opacity: 70%;
+  }
   #side-menu {
     display: none;
   }
-} /* Tablets */
-@media only screen and (min-width: 768px) {
-} /* Large Tablets */
+} /* Tablets and Large Tablets */
 @media only screen and (min-width: 992px) {
 } /* Laptops */
 @media only screen and (min-width: 1200px) {
