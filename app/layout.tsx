@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import "./styles/globals.css";
 
 // Components
@@ -6,7 +7,7 @@ import Nav from "./comp/Nav";
 import Footer from "./comp/Footer";
 
 // Fonts
-import { Rubik, Inria_Sans } from "next/font/google";
+import { Rubik, Inria_Sans, Inter } from "next/font/google";
 const rubik = Rubik({ subsets: ["latin"] });
 const inria = Inria_Sans({
   subsets: ["latin"],

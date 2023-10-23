@@ -77,6 +77,10 @@
 /* Base Styles */
 
 /* Navbar Styles */
+.glow {
+  filter: drop-shadow(0 0 0.5em #e9462e);
+  text-shadow: 0px 0px 5px #e9462e;
+}
 #navbar {
   position: absolute;
   width: 100%;
@@ -90,12 +94,23 @@
   .link-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     margin-top: 30px;
     /* border: 1px solid red; */
+    width: 65%;
+    position: relative;
+    top: 20px;
+    left: 50px;
+  }
+  .link-list > * {
+    justify-content: space-between;
+    /* font-weight: bold; */
   }
   .sub-link {
     margin-top: 15px;
+  }
+  .s-icon {
+    transform: scale(2);
   }
   #footer {
     margin-top: 40px;

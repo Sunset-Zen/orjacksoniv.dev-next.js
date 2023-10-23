@@ -1,4 +1,5 @@
 import { Toggle } from "@/components/ui/toggle";
+import { ThemeProvider } from "next-themes";
 import {
   Sheet,
   SheetClose,
@@ -14,6 +15,10 @@ import Link from "next/link";
 import Image from "next/image";
 import ToggleIcon from "./ToggleIcon";
 import ologo from "../img/O-Logo.png";
+import { HiHome } from "react-icons/hi";
+import { PiUserCircleFill } from "react-icons/pi";
+import { SiBuildkite } from "react-icons/si";
+import { MdWorkspacesFilled } from "react-icons/md";
 
 // import { IoMenu } from "react-icons/io5";
 // import { HamburgerMenuIcon } from "@radix-ui/react-icons";
@@ -35,15 +40,15 @@ const SideNav = () => {
           {/* Side Banner */}
           <div id="sm-sidebar"></div>
           {/* O Logo */}
-          <Image src={ologo} alt="" className="opacity-20" />
+          <div className="glow">
+            <Image src={ologo} alt="" className="opacity-100" />
+          </div>
           {/* Sidebar */}
           <div className=""></div>
           <SheetHeader>
             <SheetTitle>
-              <h1 className="text-white text-xl">
-                <b>
-                  <i>Otis Jackson IV</i>
-                </b>
+              <h1 className="text-white text-xl opacity-80">
+                <i>Otis Jackson IV</i>
               </h1>
             </SheetTitle>
           </SheetHeader>
@@ -51,25 +56,45 @@ const SideNav = () => {
           <SheetFooter>
             {/* List of Navs */}
             <div className="flex-col link-list">
-              <div>
+              <div className="flex">
                 <SheetClose asChild>
-                  <Link href="/">Home</Link>
+                  <Link href="/">
+                    <i className="opacity-70">
+                      <b>Home</b>
+                    </i>
+                  </Link>
                 </SheetClose>
+                <HiHome className="s-icon" />
               </div>
-              <div>
+              <div className="flex">
                 <SheetClose asChild>
-                  <Link href="/about">About</Link>
+                  <Link href="/about">
+                    <i className="opacity-70">
+                      <b>About</b>
+                    </i>
+                  </Link>
                 </SheetClose>
+                <PiUserCircleFill className="s-icon" />
               </div>
-              <div>
+              <div className="flex">
                 <SheetClose asChild>
-                  <Link href="/projects">Projects</Link>
+                  <Link href="/projects">
+                    <i className="opacity-70">
+                      <b>Projects</b>
+                    </i>
+                  </Link>
                 </SheetClose>
+                <SiBuildkite className="s-icon" />
               </div>
-              <div>
+              <div className="flex">
                 <SheetClose asChild>
-                  <Link href="/experience">Experience</Link>
+                  <Link href="/experience">
+                    <i className="opacity-70">
+                      <b>Experience</b>
+                    </i>
+                  </Link>
                 </SheetClose>
+                <MdWorkspacesFilled className="s-icon" />
               </div>
             </div>
           </SheetFooter>
