@@ -18,22 +18,24 @@ export default function Home() {
         {/* Title & Logo Section */}
         <div id="hero-c1">
           <h1 className="text-2xl">Greetings,</h1>
-          <h1 className="text-4xl">
+          <h1 className="text-4xl md:text-5xl">
             I'm
             <i>
               <b> Otis Jackson IV</b>
             </i>
           </h1>
-          <h3 id="title" className="text-xl sm:text-4xl">
+          <h1 id="title" className="text-xl">
             <i>Software Engineer & UI / UX Designer</i>
-          </h3>
+          </h1>
         </div>
         {/* Logo */}
         <Image src={ologo} alt="" id="hero-logo" />
 
         {/* CTA Section */}
         <div id="hero-c2">
-          <h1>"Where Elevation is the Standard"</h1>
+          <h1 className="md:text-xl md:font-medium">
+            "Where Elevation is the Standard"
+          </h1>
           <div className="flex gap-0">
             {/* button x3 */}
             <a href="https://github.com/Sunset-Zen" target="_blank">
@@ -72,13 +74,13 @@ export default function Home() {
 
       {/* Pitch Section */}
       <section id="pitch" className="relative">
-        <h1 className="text-white text-2xl" id="pitch-header">
+        <h1 className="text-white text-2xl md:4xl" id="pitch-header">
           <b>
             <i>My Creative Ambition</i>
           </b>
         </h1>
-        <h1 className="text-xl">
-          <i>Real Progress Starts With Innovation</i>
+        <h1 className="text-xl" id="pitch-subheader">
+          <i className="">Real Progress Starts With Innovation</i>
         </h1>
         <Image src={ologo} alt="" id="pitch-logo" />
         <div className="text-container">

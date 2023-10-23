@@ -152,9 +152,24 @@
   }
 } /* Phones */
 @media only screen and (min-width: 600px) and (max-width: 834px) {
+  #footer {
+    /* border: 1px solid blue; */
+    margin-top: 40px;
+    padding-left: 20px;
+    /* padding-top: 10px; */
+    gap: 30px;
+  }
+  #footer-logo {
+    width: 35%;
+    /* bottom: 10px; */
+  }
+  #footer-site-links {
+    gap: 20px;
+  }
+
   #navbar {
     padding-top: 40px;
-    padding-left: 25px;
+    padding-left: 45px;
     /* border: 1px solid gold; */
   }
   #top-nav {
