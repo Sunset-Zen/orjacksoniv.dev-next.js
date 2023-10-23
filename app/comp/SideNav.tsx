@@ -1,5 +1,4 @@
 import { Toggle } from "@/components/ui/toggle";
-import { ThemeProvider } from "next-themes";
 import {
   Sheet,
   SheetClose,
