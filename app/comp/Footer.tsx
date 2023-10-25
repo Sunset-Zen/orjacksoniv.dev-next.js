@@ -19,7 +19,7 @@ const Footer = () => {
         {/* Image */}
         <Image src={ologo} alt="" id="footer-logo" />
         {/* Title and External Web Links */}
-        <div>
+        <div id="e-links">
           <h1 className="text-xl">
             <b>Otis Jackson IV</b>
           </h1>
